@@ -22,5 +22,8 @@
   "scripts": {
     "clear": "rimraf lib",
     "build": "rollup -c"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

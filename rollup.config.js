@@ -4,8 +4,8 @@ const config = {
   input: "src/index.js",
   output: {
     file: "lib/index.js",
-    format: "esm", //life, cjs, esm(보통 사용되는 export { } 형태)
-    //name: "rollupTest", //life 로 지정해줄 때 필요
+    format: "cjs", //iife, cjs, esm(보통 사용되는 export { } 형태)
+    // name: "rollupTest", //iife 로 지정해줄 때 필요
   },
   plugins: [babel()],
 };
