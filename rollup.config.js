@@ -1,7 +1,7 @@
 import babel from "@rollup/plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import { terser } from "rollup-plugin-terser";
+import { terser } from "rollup-plugin-terser"; // 빌드 시  압축
 
 const config = {
   input: "src/index.js",
@@ -11,6 +11,7 @@ const config = {
     // name: "rollupTest", //iife 로 지정해줄 때 필요
   },
   plugins: [babel(), resolve(), commonjs(), terser()],
+  external: ["lodash"], // 라이브러리를 빼줄 때  사용
 };
 
 export default config;
