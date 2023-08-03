@@ -24,7 +24,8 @@
   },
   "scripts": {
     "clear": "rimraf lib",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "deploy": "NODE_ENV=production rollup -c"
   },
   "dependencies": {
     "lodash": "^4.17.21"
