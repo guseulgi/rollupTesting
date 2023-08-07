@@ -25,10 +25,11 @@
   "scripts": {
     "clear": "rimraf lib",
     "build": "rollup -c",
-    "dev": "rollup -c -w", // -w 는 watch 로, 실시간으로 변경된 파일을 빌드 처리해준다.
+    "dev": "rollup -c -w",
     "deploy": "NODE_ENV=production rollup -c"
   },
   "dependencies": {
+    "@babel/plugin-transform-arrow-functions": "^7.22.5",
     "lodash": "^4.17.21"
   }
 }
