@@ -5,11 +5,17 @@ import { terser } from "rollup-plugin-terser"; // 빌드 시  압축
 
 const config = {
   input: "src/index.js",
-  output: {
-    file: "lib/index.js",
-    format: "cjs", //iife, cjs, esm(보통 사용되는 export { } 형태)
-    // name: "rollupTest", //iife 로 지정해줄 때 필요
-  },
+  output: [
+    {
+      file: "lib/index.js",
+      format: "cjs", //iife, cjs, esm(보통 사용되는 export { } 형태)
+      // name: "rollupTest", //iife 로 지정해줄 때 필요
+    },
+    {
+      file: "dist/build.js",
+      format: "es",
+    },
+  ],
   plugins: [
     babel(),
     resolve(),

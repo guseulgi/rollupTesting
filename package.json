@@ -23,6 +23,8 @@
     ]
   },
   "scripts": {
+    "start": "rollup src/index.js -o dist/build.js -f cjs",
+    "dev2": "rollup --config",
     "clear": "rimraf lib",
     "build": "rollup -c",
     "dev": "rollup -c -w",
