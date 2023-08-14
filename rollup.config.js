@@ -17,10 +17,10 @@ const config = {
     },
   ],
   plugins: [
-    babel(),
-    resolve(),
-    commonjs(),
-    process.env.NODE_ENV === "production" && terser(), // yarn deploy 를 실행해줬을 때만 실행됨
+    // babel(),
+    // resolve(),
+    // commonjs(),
+    // process.env.NODE_ENV === "production" && terser(), // yarn deploy 를 실행해줬을 때만 실행됨
   ],
   external: ["lodash"], // 라이브러리를 빼줄 때  사용
 };
